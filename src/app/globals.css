@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Design tokens from Figma (Tailwind v4) */
+@theme {
+  --color-blue-800: #003be2;
+  --color-lime-400: #d4fb20;
+  --color-gray-50: #f5f5f6;
+  --color-gray-100: #e5e6e8;
+  --color-gray-400: #82868e;
+  --color-gray-950: #242528;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-poppins: var(--font-poppins), ui-sans-serif, sans-serif;
+  --font-satoshi: var(--font-satoshi), ui-sans-serif, sans-serif;
+  --font-clash: var(--font-clash), ui-sans-serif, sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --shadow-hero: 51px 73px 72px rgba(0,0,0,.13), 25.8px 36.9px 36px rgba(0,0,0,.1),
+    10.2px 14.6px 16px rgba(0,0,0,.08), 2.2px 3.2px 5.7px rgba(0,0,0,.06);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-satoshi);
+  color: var(--color-gray-950);
+}
+
+/* 120px grid used in Hero and CTA backgrounds */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,.12) 1px, transparent 1px);
+  background-size: 120px 120px;
 }
