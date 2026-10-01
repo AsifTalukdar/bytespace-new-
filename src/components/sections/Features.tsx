@@ -127,7 +127,7 @@ export default function Features() {
             {/* Student image (center) */}
             <div className="absolute left-[60px] top-[20px] md:left-[80px] md:top-0 w-[280px] h-[420px] md:w-[340px] md:h-[520px] z-10">
               <Image
-                src="/images/Image1.png"
+                src="/images/image-1.png"
                 alt="Creator with tablet"
                 fill
                 sizes="(max-width: 768px) 280px, 340px"
