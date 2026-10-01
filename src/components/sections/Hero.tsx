@@ -42,7 +42,7 @@ export default function Hero() {
         <div className="absolute bottom-[-300px] left-1/2 size-[700px] -translate-x-1/2 rounded-full bg-lime-400 md:bottom-[-560px] md:size-[1149px]" />
         <div className="absolute bottom-0 left-1/2 h-[340px] w-[320px] -translate-x-1/2 md:h-[512px] md:w-[578px]">
           <Image src="/images/hero-student.png" alt="Smiling student with headphones and laptop"
-            fill priority className="object-cover object-top" />
+            fill priority sizes="(max-width: 768px) 320px, 578px" className="object-cover object-top" />
         </div>
 
         <FloatingCard className="left-4 top-4 md:left-[280px] md:top-[127px]">
