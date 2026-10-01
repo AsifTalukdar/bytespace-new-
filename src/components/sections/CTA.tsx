@@ -1,11 +1,14 @@
+import Image from "next/image";
 import Button from "../ui/Button";
 
 export default function CTA() {
   return (
     <section className="bg-grid relative overflow-hidden bg-blue-800 py-32 px-5 text-center text-white">
-      {/* 3D Shapes (Export these from Figma if you want them floating around!) */}
-      {/* <Image src="/images/cta-shapes.png" alt="Shapes" fill className="object-cover opacity-80 pointer-events-none" /> */}
-      
+      <Image src="/images/ornament-left.png" alt="" width={260} height={260}
+        className="pointer-events-none absolute -left-16 -top-10 hidden opacity-90 lg:block" />
+      <Image src="/images/ornament-right.png" alt="" width={240} height={240}
+        className="pointer-events-none absolute -right-10 bottom-0 hidden opacity-90 lg:block" />
+
       <div className="relative max-w-[900px] mx-auto z-10">
         <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold font-poppins mb-6 leading-tight">
           Unlock Your Potential as a<br />Creator with ByteSpace
